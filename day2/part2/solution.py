@@ -16,9 +16,8 @@ def main():
                 aim += int(parsed[1])
             elif parsed[0] == "up":
                 aim -= int(parsed[1])
-        
-        print(depth*horizontal)
-            
+
+        print(depth * horizontal)
 
 
 if __name__ == "__main__":

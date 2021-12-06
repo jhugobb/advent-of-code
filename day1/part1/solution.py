@@ -10,9 +10,8 @@ def main():
             if int(current) >= int(previous):
                 result += 1
             previous = current
-        
+
         print(result)
-            
 
 
 if __name__ == "__main__":

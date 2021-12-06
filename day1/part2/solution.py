@@ -17,12 +17,10 @@ def main():
                 # print(current)
                 if sum(current) > sum(previous):
                     result += 1
-            
+
             previous = current.copy()
 
-        
         print(result)
-            
 
 
 if __name__ == "__main__":

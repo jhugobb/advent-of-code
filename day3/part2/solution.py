@@ -7,7 +7,7 @@ def main():
         co2_candidates = input.copy()
         index = 0
         for index in range(0, len(input[0])):
-            
+
             oxygen_zero_candidates = []
             oxygen_one_candidates = []
             num_of_zeros_oxy = 0
@@ -25,13 +25,12 @@ def main():
                     elif candidate[index] == "1":
                         num_of_ones_oxy += 1
                         oxygen_one_candidates.append(candidate)
-                
+
                 if num_of_zeros_oxy <= num_of_ones_oxy:
                     oxygen_candidates = oxygen_one_candidates.copy()
                 else:
                     oxygen_candidates = oxygen_zero_candidates.copy()
 
-            
             if len(co2_candidates) > 1:
                 for candidate in co2_candidates:
                     if candidate[index] == "0":
@@ -51,8 +50,6 @@ def main():
 
         print(int(oxygen_candidates[0], 2) * int(co2_candidates[0], 2))
 
-            
-            
 
 if __name__ == "__main__":
     main()
